@@ -1,0 +1,50 @@
+.p1 { /* Style page d'accueil */
+    font-family: verdana;
+    font-size: 20px;
+    color: azure;
+    width: 780px;
+    height: 142px;
+    margin:  auto;
+    position: absolute;
+    left: 6%;
+    bottom: 50%;
+     border-style: solid;
+    }
+
+.p2{  /* Style page d'accueil */
+    font-family: verdana;
+    font-size: 20px;
+    color: azure;
+    width: 145px;
+    height: 70px;
+    margin:  auto;
+    position: absolute;
+    left: 5%;
+    bottom: 60%;
+    background-color: #777;
+}
+.background_avantage { /*Mets en place le background pour la page mission*/
+    height:764px;
+    width: 1920px;
+    background: url(mission.jpg);
+    background-size: 1950px 1000px ;
+    bottom: 0%;
+    position:absolute;
+  }
+
+  .background_mission { /*Mets en place le background pour la page taille*/
+    height:764px;
+    width: 1920px;
+    background: url(earth.jpg);
+    background-size: 1950px 1000px ;
+    bottom: 0%;
+    position:absolute;
+  }
+  .background_faq { /*Mets en place le background pour la page faq*/
+    height:794px;
+    width: 1920px;
+    background: url(faq.jpg);
+    background-size: 1950px 1000px ;
+    bottom: 0%;
+    position:absolute;
+  }

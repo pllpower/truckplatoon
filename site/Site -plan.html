@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Plan du site</title>
+<link rel="stylesheet" href="stylesheet.css">
+<style>
+ /*--------------------------- CSS ------------------------------------- */
+    ul {
+      padding: 0; /* modifie l'arrière plan du menu de selection */ 
+      list-style: none;
+      background: #f2f2f2;
+    }
+    ul li {
+      display: inline-block; /* modifie le style du menu de selection */ 
+      position: relative;
+      line-height: 21px;
+      text-align: left;
+    }
+    ul li a {
+      display: block; /* gère l'espace entre les blocks */
+      padding: 8px 25px;
+      color: #333;
+      text-decoration: none;
+    }
+    ul li a:hover {
+      color: #fff; /* permet de choisir la couleur du rectangle entourant la selection */
+      background: #939393;
+    }
+    ul li ul.dropdown {
+      min-width: 100%; /* modifie le style du dropdown */
+      background: #f2f2f2;
+      display: none;
+      position: absolute;
+      z-index: 999;
+      left: 0;
+    }
+    ul li:hover ul.dropdown {
+      display: block; /* Permet d'afficher le menu dropdown */
+    }
+    ul li ul.dropdown li {
+      display: block; /* Permet aussi d'afficher le menu dropdown */
+    }
+    .header1 {
+      padding: 0px; /* style de l'en-tête */
+      margin: 0px;
+      margin-top: -21px;
+      background: #0a0442;
+    }
+    footer {  /*Style du footing*/
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      background: #f2f2f2;
+    }
+    body{
+      margin: 0px; /* retire la marge */
+      padding: 0px;
+    }
+
+    li {
+      display: inline-block; /* change l'enlignement du texte */
+      text-align: left;
+      float: left;
+    }
+
+    a:link {
+        color: rgb(15, 169, 196); /* couleur des lien des menus */
+        text-decoration: none;
+    }
+    a:visited {
+        color: rgb(15, 169, 196); /* couleur des lien des menus */
+        text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline; /* souligne les mots du menu que l'on survole */
+        color: rgb(74, 184, 199)
+         }
+    .adjust-line-height-footer {
+      line-height: 0em;
+    }
+    .img { /*positionnement de l'image 1*/
+  max-width: 800px;
+  height: auto;
+  left: 500%;
+  bottom: -350%;
+  position: absolute;
+  border: 5px solid #555;
+    }
+    .p6{  /* Style page index */
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 115px;
+    margin:  auto;
+    position: absolute;
+    left: 5%;
+    bottom: 63%;
+    background-color: #fff;
+    border: solid #777;
+    }
+    .p7{  /* Style page index */
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: 285px;
+    height: 150px;
+    margin:  auto;
+    position: absolute;
+    left: 5%;
+    bottom: 59%;
+    background-color: #fff;
+    border: solid #777;
+    }
+    .p8{  /* Style page index */
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    height: 150px;
+    margin:  auto;
+    position: absolute;
+    left: 20%;
+    bottom: 59%;
+    background-color: #fff;
+    border: solid #777;
+    }
+    .p9{  /* Style page index */
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: 315px;
+    height: 150px;
+    margin:  auto;
+    position: absolute;
+    left: 27.9%;
+    bottom: 59%;
+    background-color: #fff;
+    border: solid #777;
+    }
+    .p10{  /* Style page index */
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: 232px;
+    height: 150px;
+    margin:  auto;
+    position: absolute;
+    left: 44.3%;
+    bottom: 59%;
+    background-color: #fff;
+    border: solid #777;
+    }
+    .p11{  /* Style page index */
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: 175px;
+    height: 150px;
+    margin:  auto;
+    position: absolute;
+    left: 56.6%;
+    bottom: 59%;
+    background-color: #fff;
+    border: solid #777;
+    }
+    .p12{  /* Style page index */
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: 250px;
+    height: 150px;
+    margin:  auto;
+    position: absolute;
+    left: 65.95%;
+    bottom: 59%;
+    background-color: #fff;
+    border: solid #777;
+    }
+    .p13{  /* Style page index */
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: 145px;
+    height: 150px;
+    margin:  auto;
+    position: absolute;
+    left: 79.1%;
+    bottom: 59%;
+    background-color: #fff;
+    border: solid #777;
+    }
+    .p14{  /* Style page index */
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: 136px;
+    height: 150px;
+    margin:  auto;
+    position: absolute;
+    left: 86.8%;
+    bottom: 59%;
+    background-color: #fff;
+    border: solid #777;
+    }
+ /*--------------------------- HTML ------------------------------------- */
+</style>
+   <div class="header1">
+        <img src="Platooning.jpg" alt="logo" align="absbottom"/>
+        <nav>
+          <ul>
+          <pre><font size="4px" face="verdana">  
+            <li style="padding-right:10px"><A HREF="Site -accueil.html">Accueil</A></li><li style="padding-right:10px"><A HREF="Site -mission.html">Notre mission</A><ul class="dropdown"><li><a href="avantages.html">Avantages</a></li><li><a href="futures.html">Projets Futures</a></li></ul></li><li style="padding-right:10px"><A HREF="Site -methodes.html">Nos méthodes</A></li><li style="padding-right:10px"><A HREF="Site -pourquoi.html">Pourquoi nous choisir?</A><ul class="dropdown"><li><a href="equipe.html">Notre équipe</a></li><li><a href="taille.html">Taille de notre entreprise</a></li><li><a href="exp.html">Notre expérience</a></li></ul></li><li style="padding-right:10px"><A HREF="Site -FAQ.html">FAQ</A></li><li style="padding-right:10px"><A HREF="Site -Contact.html">Contact</A></li><li style="padding-right:10px"><A HREF="Site -Soumission.html">Demander une soumission</A></li>
+          </font></pre> 
+          </ul>
+        </nav>
+   </div>
+</head>
+<body style="background-color:rgb(74, 184, 199)">
+  <pre>           <font face="verdana" size="6"><b><u>Plan du site</u></b></font></pre>
+  <div class="p7"></div>
+  <div class="p8"></div>
+  <div class="p9"></div>
+  <div class="p10"></div>
+  <div class="p11"></div>
+  <div class="p12"></div>
+  <div class="p13"></div>
+  <div class="p14"></div>
+  <div class="p6"><pre>
+  <img class="img" src="platooning-578x324-c-default.jpg">   
+ <A HREF="Site -accueil.html" target="_blank">Accueil</A>&nbsp;&nbsp;&nbsp;<A HREF="Site -mission.html" target="_blank">Notre mission</A>&nbsp;&nbsp;&nbsp;<A HREF="Site -methodes.html" target="_blank">Nos méthodes</A>&nbsp;&nbsp;&nbsp;<A HREF="Site -pourquoi.html" target="_blank">Pourquoi nous choisir?</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="Site -FAQ.html" target="_blank">Foire aux questions</A>&nbsp;&nbsp;&nbsp;<A HREF="Site -Contact.html" target="_blank">Nous contacter</A>&nbsp;&nbsp;&nbsp;<A HREF="Site -Soumission.html" target="_blank">Faire une soumission</A>&nbsp;&nbsp;&nbsp;<A HREF="Site -ref.html" target="_blank">Références</A>&nbsp;&nbsp;&nbsp; <A HREF="Site -propos.html" target="_blank">À propos</A>      
+           <A HREF="avantages.html" target="_blank">Avantages</A>                      <A HREF="equipe.html" target="_blank">Notre équipe</A>  
+           <A HREF="futures.html" target="_blank">Projets futurs</A>                 <A HREF="taille.html" target="_blank">Taille de notre entreprise</A>
+                                          <A HREF="exp.html" target="_blank">Notre expérience</A>
+ </pre></div>
+
+<footer>
+  <pre style="text-align: right"><font size="2px" face="verdana"><div class=" adjust-line-height-footer"><A HREF="https://twitter.com/" target="_blank">Twitter</A>&nbsp;&nbsp;<A HREF="https://fr-ca.facebook.com/" target="_blank">Facebook</A>&nbsp;&nbsp;<A HREF="https://www.instagram.com/?hl=fr" target="_blank">Instagram</A>&nbsp;&nbsp;<A HREF="https://www.linkedin.com/" target="_blank">LinkedIn</A>&nbsp;&nbsp;<A HREF="Site -plan.html">Plan du site</A>&nbsp;&nbsp;<A HREF="Site -ref.html">Références</A>&nbsp;&nbsp;<A HREF="Site -propos.html">À propos</A>&nbsp;&nbsp;</div>   
+   Auteur: Pierre-Luc Lizée    </font>
+</footer>
+</body>
+</html>
